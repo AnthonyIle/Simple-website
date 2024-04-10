@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- DOCTYPE shows the version of html your using-->
+<html lang="eng">
+<head>
+	<meta charset="utf-8"> <!-- meta provides information about the document-->
+	<meta content="width=device-width, initial-scale=1" name="viewport"> <!-- meta provides information about the document-->
+	<title>Antile Integrated Systems</title>
+	<style>
+		body {
+			background-color: #faf2e4;
+			margin: 0 10%;
+			font-family: sans-serif;
+		}
+		h1 {
+			text-align: center;
+			font-family: serif;
+			font-weight: normal;
+			text-transform: uppercase;
+			border-bottom: 1px solid #57b1dc;
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+
+<h1><img src="black goose.jpg" alt="logo"><br>Owners of Antile Integrated Systems</h1>
+<a> Anthony founded the company, Antile Integrated Systems. The focus is on technology, specifically web technology. Alongside with him is my first child, Amora. She was born on 27th February 2018 ,and she has a younger</a>
+<a>	brother Allen (born on 15th July 2021). I am hoping they will join me in running a successful web technology business in Cape Town. </a>
+
+<h2>Operation </h2>
+<p1>
+	Antile Integrated Systems offers frontend web development. We use web technology such as: HTML, CSS,JavaScript or you could opt to use WordPress in building your website.<br>
+	<img src="black%20goose1.JPG" alt="logo">
+</p1>
+
+<h3>Sample</h3>
+<p2>This is a sample web page that we could build. <em>We do not handle backend development</em>. We ensure timely delivery of projects
+Flexible with our rates including updates of webpage. Our vision is to grow globally.</p2>
+
+<h4>Contact</h4>
+<p3> 42 Prinsloo Street, Parow Valley, Cape Town, South Africa;<br>
+Monday through Friday 9am to 4pm; <br> Saturday, 11am to 3pm <br> Tel:+27767860640, same number for WhatsApp.</p3>
+
+<! -- comments are useful in explaining codes, for example  start a global code below use <ul>
+
+</ul> -->
+<!  end of the global code in comment section -->
+
+<script>
+	const htmlBody = document.querySelector('body');
+	const randomClickFunction = function () {
+		const colors = ["#002942", "#0Ca7DB", "red", "blue", "green", "yellow", "orange", "purple"];
+
+		const randomIndex = Math.floor(Math.random() * colors.length);
+
+		const randomColor = colors[randomIndex];
+
+		htmlBody.style.backgroundColor = randomColor;
+
+		console.log('The user clicked and set color to' + randomColor);
+	}
+</script>
+<script>
+	randomClickFunction()
+</script>
+<script>
+	htmlBody.onclick = randomClickFunction;
+</script>
+</body>
+</html>
+
+
